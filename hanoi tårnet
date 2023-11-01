@@ -1,0 +1,282 @@
+white-circ = circle(60, "solid", "white")
+orange-circ = circle(60, "solid", "orange")
+blue-circ = circle(50, "solid", "blue")
+green-circ = circle(40, "solid", "green")
+red-circ = circle(30, "solid", "red")
+pole = circle(10, "solid", "black")
+
+empty-pole = overlay(pole, white-circ)
+
+#her forteller vi med navn bak hver definisjon hvilken figur vi jobber med
+
+#figure1
+step-one1 = overlay(blue-circ, orange-circ)
+step-two1 = overlay(green-circ, step-one1)
+step-three1 = overlay(red-circ, step-two1)
+step-four1 = overlay(pole, step-three1)
+
+figure-one1 = step-four1
+figure-two1 = empty-pole
+figure-three1 = empty-pole
+
+beside-one1 = beside(figure-one1, figure-two1)
+beside-two1 = beside(beside-one1, figure-three1)
+
+
+#figure2
+step-one2 = overlay(blue-circ, orange-circ)
+step-two2 = overlay(green-circ, step-one2)
+step-three2 = overlay(pole, step-two2)
+step-four2 = overlay(red-circ, white-circ)
+step-five2 = overlay(pole, step-four2)
+
+figure-one2 = step-three2
+figure-two2 = step-five2
+figure-three2 = empty-pole
+
+beside-one2 = beside(figure-one2, figure-two2)
+beside-two2 = beside(beside-one2, figure-three2)
+
+
+#figure3
+step-one3 = overlay(blue-circ, orange-circ)
+step-two3 = overlay(pole, step-one3)
+step-three3 = overlay(red-circ, white-circ)
+step-four3 = overlay(pole, step-three3)
+step-five3 = overlay(green-circ, white-circ)
+step-six3 = overlay(pole, step-five3)
+
+figure-one3 = step-two3
+figure-two3 = step-four3
+figure-three3 = step-six3
+
+beside-one3 = beside(figure-one3, figure-two3)
+beside-two3 = beside(beside-one3, figure-three3)
+
+
+#figure4
+step-one4 = overlay(blue-circ, orange-circ)
+step-two4 = overlay(pole, step-one4)
+step-three4 = overlay(green-circ, white-circ)
+step-four4 = overlay(red-circ, step-three4)
+step-five4 = overlay(pole, step-four4)
+
+figure-one4 = step-two4
+figure-two4 = empty-pole
+figure-three4 = step-five4
+
+beside-one4 = beside(figure-one4, figure-two4)
+beside-two4 = beside(beside-one4, figure-three4)
+
+
+#figure5
+step-one5 = overlay(pole, orange-circ)
+step-two5 = overlay(blue-circ, white-circ)
+step-three5 = overlay(pole, step-two5)
+step-four5 = overlay(green-circ, white-circ)
+step-five5 = overlay(red-circ, step-four5)
+step-six5 = overlay(pole, step-five5)
+
+figure-one5 = step-one5
+figure-two5 = step-three5
+figure-three5 = step-six5
+
+beside-one5 = beside(figure-one5, figure-two5)
+beside-two5 = beside(beside-one5, figure-three5)
+
+
+#figure6
+step-one6 = overlay(red-circ, orange-circ)
+step-two6 = overlay(pole, step-one6)
+step-three6 = overlay(blue-circ, white-circ)
+step-four6 = overlay(pole, step-three6)
+step-five6 = overlay(green-circ, white-circ)
+step-six6 = overlay(pole, step-five6)
+
+figure-one6 = step-two6
+figure-two6 = step-four6
+figure-three6 = step-six6
+
+beside-one6 = beside(figure-one6, figure-two6)
+beside-two6 = beside(beside-one6, figure-three6)
+
+
+#figure7
+step-one7 = overlay(red-circ, orange-circ)
+step-two7 = overlay(pole, step-one7)
+step-three7 = overlay(blue-circ, white-circ)
+step-four7 = overlay(green-circ, step-three7)
+step-five7 = overlay(pole, step-four7)
+
+figure-one7 = step-two7
+figure-two7 = step-five7
+figure-three7 = empty-pole
+
+beside-one7 = beside(figure-one7, figure-two7)
+beside-two7 = beside(beside-one7, figure-three7)
+
+
+#figure8
+step-one8 = overlay(pole, orange-circ)
+step-two8 = overlay(blue-circ, white-circ)
+step-three8 = overlay(green-circ, step-two8)
+step-four8 = overlay(red-circ, step-three8)
+step-five8 = overlay(pole, step-four8)
+
+figure-one8 = step-one8
+figure-two8 = step-five8
+figure-three8 = empty-pole
+
+beside-one8 = beside(figure-one8, figure-two8)
+beside-two8 = beside(beside-one8, figure-three8)
+
+
+#figure9
+step-one9 = overlay(blue-circ, white-circ)
+step-two9 = overlay(green-circ, step-one9)
+step-three9 = overlay(red-circ, step-two9)
+step-four9 = overlay(pole, step-three9)
+step-five9 = overlay(pole, orange-circ)
+
+figure-one9 = empty-pole
+figure-two9 = step-four9
+figure-three9 = step-five9
+
+beside-one9 = beside(figure-one9, figure-two9)
+beside-two9 = beside(beside-one9, figure-three9)
+
+
+#figure10
+step-one10 = overlay(blue-circ, white-circ)
+step-two10 = overlay(green-circ, step-one10)
+step-three10 = overlay(pole, step-two10)
+step-four10 = overlay(red-circ, orange-circ)
+step-five10 = overlay(pole, step-four10)
+
+figure-one10 = empty-pole
+figure-two10 = step-three10
+figure-three10 = step-five10
+
+beside-one10 = beside(figure-one10, figure-two10)
+beside-two10 = beside(beside-one10, figure-three10)
+
+
+#figure11
+step-one11 = overlay(green-circ, white-circ)
+step-two11 = overlay(pole, step-one11)
+step-three11 = overlay(blue-circ, white-circ)
+step-four11 = overlay(pole, step-three11)
+step-five11 = overlay(red-circ, orange-circ)
+step-six11 = overlay(pole, step-five11)
+
+figure-one11 = step-two11
+figure-two11 = step-four11
+figure-three11 = step-six11
+
+beside-one11 = beside(figure-one11, figure-two11)
+beside-two11 = beside(beside-one11, figure-three11)
+
+
+#figure12
+step-one12 = overlay(green-circ, white-circ)
+step-two12 = overlay(red-circ, step-one12)
+step-three12 = overlay(pole, step-two12)
+step-four12 = overlay(blue-circ, white-circ)
+step-five12 = overlay(pole, step-four12)
+step-six12 = overlay(pole, orange-circ)
+
+figure-one12 = step-three12
+figure-two12 = step-five12
+figure-three12 = step-six12
+
+beside-one12 = beside(figure-one12, figure-two12)
+beside-two12 = beside(beside-one12, figure-three12)
+
+
+#figure13
+step-one13 = overlay(green-circ, white-circ)
+step-two13 = overlay(red-circ, step-one13)
+step-three13 = overlay(pole, step-two13)
+step-four13 = overlay(blue-circ, orange-circ)
+step-five13 = overlay(pole, step-four13)
+
+figure-one13 = step-three13
+figure-two13 = empty-pole
+figure-three13 = step-five13
+
+beside-one13 = beside(figure-one13, figure-two13)
+beside-two13 = beside(beside-one13, figure-three13)
+
+
+#figure14
+step-one14 = overlay(green-circ, white-circ)
+step-two14 = overlay(pole, step-one14)
+step-three14 = overlay(red-circ, white-circ)
+step-four14 = overlay(pole, step-three14)
+step-five14 = overlay(blue-circ, orange-circ)
+step-six14 = overlay(pole, step-five14)
+
+figure-one14 = step-two14
+figure-two14 = step-four14
+figure-three14 = step-six14
+
+beside-one14 = beside(figure-one14, figure-two14)
+beside-two14 = beside(beside-one14, figure-three14)
+
+
+#figure15
+step-one15 = overlay(red-circ, white-circ)
+step-two15 = overlay(pole, step-one15)
+step-three15 = overlay(blue-circ, orange-circ)
+step-four15 = overlay(green-circ, step-three15)
+step-five15 = overlay(pole, step-four15)
+
+figure-one15 = empty-pole
+figure-two15 = step-two15
+figure-three15 = step-five15
+
+beside-one15 = beside(figure-one15, figure-two15)
+beside-two15 = beside(beside-one15, figure-three15)
+
+
+#figure16
+figure-one16 = empty-pole
+figure-two16 = empty-pole
+figure-three16 = step-four1
+
+beside-one16 = beside(figure-one16, figure-two16)
+beside-two16 = beside(beside-one16, figure-three16)
+
+
+"figur 1" 
+beside-two1
+"figur 2"
+beside-two2
+"figur 3"
+beside-two3
+"figur 4"
+beside-two4
+"figur 5"
+beside-two5
+"figur 6"
+beside-two6
+"figur 7"
+beside-two7
+"figur 8"
+beside-two8
+"figur 9"
+beside-two9
+"figur 10"
+beside-two10
+"figur 11"
+beside-two11
+"figur 12"
+beside-two12
+"figur 13"
+beside-two13
+"figur 14"
+beside-two14
+"figur 15"
+beside-two15
+"figur 16"
+beside-two16
